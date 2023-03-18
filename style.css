@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+    
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    /* border-bottom: 1px solid black; */
+    
+}
+
+
+
+.top{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'gilroy';
+}
+
+.navbar .logo{
+    font-family: 'gilroy';
+    color: #333;
+}
+
+.navbar .logo span{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(255, 151, 33);
+    font-weight: 700;
+}
+
+nav ul li{
+    list-style: none;
+    color: #333;
+    font-size: 16px;
+    /* border-bottom: 0.1px solid #333; */
+    margin-left: 70px;
+    margin-right: 70px;
+    display: inline-block;
+
+}
+
+.txtbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+.txtbox h2{
+    font-family: 'gilroy';
+    font-size: 7.2vw;
+    color: #464646;
+    font-weight: 500;
+    
+}
+
+.txtbox h1{
+    font-family: 'gilroy';
+    font-size: 7.2vw;
+    font-weight: 500;
+    
+    color: #464646;
+}
+.pbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pbox p{
+    font-size: 18px;
+    color: #333;
+    font-family: 'gilroy';
+}
+
+.top button{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background: inherit;
+    border: 0.2px solid #333;
+    font-size: 15px;
+    color: #333;
+    margin-top:20px;
+}
+
+.pngbox img{
+    width: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 20px;
+}
+
+#fontchange{
+    color: gray;
+}
+
+.caption{
+    width: 180px;
+    height: 110px;
+    background-color: inherit;
+    border-radius: 25px;
+    border: 0.1px solid rgb(185, 185, 185);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'gilroy';
+    color: rgb(50, 50, 50);
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+}
+
+.caption p{
+    font-size: 14.5px;
+}
+
+
+.bottom{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(199, 199, 199);
+    /* clip-path: polygon(0 53%, 100% 0, 100% 100%, 0% 100%); */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bottom i{
+    font-size: 30px;
+    color: #333;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2%;
+}
+/* .social div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: inherit;
+    border: 0.2px solid #333;
+    margin-left: 5px;
+    margin-right: 5px;
+} */
+
+.social i{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.social i:hover{
+    cursor: pointer;
+}
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
