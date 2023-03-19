@@ -67,3 +67,56 @@ tl1.from("#fontchange",{
     stagger:0.1,
 
 })
+
+let tl2 = gsap.timeline()
+
+
+tl2.from('.about h1',{
+    opacity:0,
+    onStart:function(){
+        $('.about h1').textillate({
+            in:{
+                effect:'fadeInLeft',
+                sequence:true,
+                delay:10
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        start:"end end",
+        end:"end end",
+        
+    },
+})
+.from('.about p',{
+    opacity:0,
+    onStart:function(){
+        $('.about p').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:1
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        start:"end end",
+        end:"end end",
+        
+    },
+  
+})
+.from('.about button',{
+    y:'20px',
+    opacity:0,
+    delay:2,
+
+})

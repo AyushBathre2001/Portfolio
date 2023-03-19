@@ -200,4 +200,79 @@ nav ul li{
     width: 100%;
     height: 100vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding: 50px;
+}
+
+.mybox{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tech img{
+    width: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.myimg{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px rgb(126, 126, 126);
+    position: relative;
+
+}
+
+.myimg img{
+    width: 100%;
+    height: 450px;
+    
+}
+
+.curtain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    /* background-color: rgba(255, 255, 255, 0.388); */
+    background: linear-gradient(to bottom, rgba(216, 209, 209, 0),rgba(255, 255, 255, 0),rgba(32, 32, 32, 0.445));
+}
+.about{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about h1{
+    font-size: 6vw;
+    font-family: 'gilroy';
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+}
+
+.about p{
+    font-family: 'gilroy';
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.about button{
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    border: 0.1px solid gray;
+    border-radius: 25px;
+    margin-top: 15px;
 }
