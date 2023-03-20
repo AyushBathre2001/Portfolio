@@ -71,14 +71,26 @@ tl1.from("#fontchange",{
 let tl2 = gsap.timeline()
 
 
-tl2.from('.about h1',{
+tl2.to('.aboutopen',{
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        start:"end center",
+        end:"end center",
+        scrub:4
+    },
+    bottom:'0%',
+    borderRadius:'0%'
+})
+.from("#abtxt",{
     opacity:0,
     onStart:function(){
-        $('.about h1').textillate({
+        $("#abtxt").textillate({
             in:{
-                effect:'fadeInLeft',
+                effect:'fadeInUp',
                 sequence:true,
-                delay:10
+                delay:30,
+                markers:true
               
             }
           
@@ -87,36 +99,99 @@ tl2.from('.about h1',{
     scrollTrigger:{
         trigger:".page2",
         scroller:"body",
-        start:"end end",
-        end:"end end",
+        start:"top center",
+        end:"top center",
         
     },
+    // delay:1
+    
 })
-.from('.about p',{
+
+
+let tl3 = gsap.timeline()
+
+tl3.to('.skillset',{
+    scrollTrigger:{
+        trigger:".page3",
+        scroller:"body",
+        start:"end center",
+        end:"end center",
+        scrub:4
+    },
+    bottom:'0%',
+    borderRadius:'0%'
+})
+.from('.skillset h1',{
     opacity:0,
     onStart:function(){
-        $('.about p').textillate({
+        $('.skillset h1').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:30
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page3",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+        
+    },
+
+  
+})
+.from('#firstp',{
+    opacity:0,
+    onStart:function(){
+        $('#firstp').textillate({
             in:{
                 effect:'fadeInUp',
                 sequence:true,
                 delay:1
+                
               
             }
           
         })
     },
     scrollTrigger:{
-        trigger:".page2",
+        trigger:".page3",
         scroller:"body",
-        start:"end end",
-        end:"end end",
+        start:"top center",
+        end:"top center",
         
     },
   
 })
-.from('.about button',{
-    y:'20px',
-    opacity:0,
-    delay:2,
 
+gsap.to('.col1img',{
+    scrollTrigger:{
+        trigger:".design",
+        scroller:"body",
+        start:"top center",
+        end:"center top",
+        scrub:4,
+        // markers:true
+    },
+
+    y:'-300px'
+  
+})
+gsap.to('.col2img',{
+    scrollTrigger:{
+        trigger:".design",
+        scroller:"body",
+        start:"top center",
+        end:"center top",
+        scrub:2,
+        // markers:true
+    },
+
+    y:'200px'
+  
 })
