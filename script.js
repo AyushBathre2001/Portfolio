@@ -110,16 +110,18 @@ tl2.to('.aboutopen',{
 
 let tl3 = gsap.timeline()
 
-tl3.to('.skillset',{
+tl3.to('.overlay',{
     scrollTrigger:{
         trigger:".page3",
         scroller:"body",
-        start:"end center",
-        end:"end center",
-        scrub:4
+        start:"top center",
+        end:"center center",
+      
+        scrub:5,
+        
     },
-    bottom:'0%',
-    borderRadius:'0%'
+    y:'-1000px'
+    
 })
 .from('.skillset h1',{
     opacity:0,
@@ -175,7 +177,7 @@ gsap.to('.col1img',{
         scroller:"body",
         start:"top center",
         end:"center top",
-        scrub:4,
+        scrub:8,
         // markers:true
     },
 
@@ -188,10 +190,10 @@ gsap.to('.col2img',{
         scroller:"body",
         start:"top center",
         end:"center top",
-        scrub:2,
+        scrub:8,
         // markers:true
     },
 
-    y:'200px'
+    y:'100px'
   
 })

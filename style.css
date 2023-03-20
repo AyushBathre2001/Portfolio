@@ -10,7 +10,7 @@
 body{
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(67, 67, 67);
     
     
 }
@@ -18,7 +18,8 @@ body{
 .page1{
     width: 100%;
     height: 97vh;
-
+    
+    
     /* border-bottom: 1px solid black; */
     
 }
@@ -29,6 +30,7 @@ body{
     width: 100%;
     height: 90%;
     background-color: rgb(255, 255, 255);
+    background-color: rgb(28, 28, 28);
 
 }
 
@@ -44,7 +46,7 @@ body{
 
 .navbar .logo{
     font-family: 'gilroy';
-    color: #333;
+    color: white;
 }
 
 .navbar .logo span{
@@ -55,7 +57,7 @@ body{
 
 nav ul li{
     list-style: none;
-    color: #333;
+    color: white;
     font-size: 16px;
     /* border-bottom: 0.1px solid #333; */
     margin-left: 70px;
@@ -82,7 +84,7 @@ nav ul li{
 .txtbox h2{
     font-family: 'gilroy';
     font-size: 7.2vw;
-    color: #333;
+    color: white;
     font-weight: 500;
     
 }
@@ -92,7 +94,7 @@ nav ul li{
     font-size: 7.2vw;
     font-weight: 500;
     
-    color: #333;
+    color: white;
 }
 .pbox{
     display: flex;
@@ -102,7 +104,7 @@ nav ul li{
 
 .pbox p{
     font-size: 18px;
-    color: #333;
+    color: white;
     font-family: 'gilroy';
 }
 
@@ -111,9 +113,9 @@ nav ul li{
     height: 40px;
     border-radius: 25px;
     background: inherit;
-    border: 0.2px solid #333;
+    border: 0.2px solid white;
     font-size: 15px;
-    color: #333;
+    color: white;
     margin-top:20px;
 }
 
@@ -125,7 +127,7 @@ nav ul li{
 }
 
 #fontchange{
-    color: gray;
+    color: #c5c5c5;
 }
 
 .caption{
@@ -139,7 +141,7 @@ nav ul li{
     justify-content: center;
     padding: 20px;
     font-family: 'gilroy';
-    color: rgb(50, 50, 50);
+    color: white;
     position: absolute;
     right: 5%;
     bottom: 15%;
@@ -153,7 +155,7 @@ nav ul li{
 .bottom{
     width: 100%;
     height: 10%;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(28,28,28);
     /* clip-path: polygon(0 53%, 100% 0, 100% 100%, 0% 100%); */
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);    display: flex;
     align-items: center;
@@ -163,7 +165,7 @@ nav ul li{
 
 .bottom i{
     font-size: 30px;
-    color: #333;
+    color: #ffffff;
 }
 
 
@@ -171,7 +173,7 @@ nav ul li{
 .page2{
     width: 100%;
     height: 110vh;
-    background-color: white;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +217,7 @@ nav ul li{
     background-color: white;
     overflow: hidden;
     border-radius: 4px;
-    box-shadow: 0px 3px 5px rgb(126, 126, 126);
+    box-shadow: 0px 3px 5px rgb(17, 16, 16);
     position: relative;
     margin-top: 50px;
     margin-left: 10px;
@@ -236,7 +238,7 @@ nav ul li{
     background-color: white;
     overflow: hidden;
     border-radius: 4px;
-    box-shadow: 0px 3px 5px rgb(126, 126, 126);
+    box-shadow: 0px 3px 5px rgb(22, 22, 22);
     position: relative;
     margin-top: 50px;
     margin-left: 10px;
@@ -267,7 +269,7 @@ nav ul li{
 .about h1{
     font-size: 3vw;
     font-family: 'gilroy';
-    color: #333;
+    color: white;
     font-weight: 500;
 }
 
@@ -276,6 +278,7 @@ nav ul li{
     font-size: 18px;
     line-height: 1.4;
     margin-top: 10px;
+    color: white;
 }
 
 .about button{
@@ -299,22 +302,50 @@ nav ul li{
 .skillset{
     width: 100%;
     height: 100%;
-    position: absolute;
-    background-color: rgb(224, 224, 224);
-    bottom: -110%;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
+    background-color: rgb(28, 28, 28);
+ 
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    position:absolute;
+    z-index: 10;
+}
+
+.skills{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 100px;
+}
+
+.poster{
+    width: 40%;
+    height: 100%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .aboutopen{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(28, 28, 28);
     bottom: -110%;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
@@ -330,7 +361,7 @@ nav ul li{
     font-family: 'gilroy';
     font-weight: 500;
     font-size: 3vw;
-    color: #333;
+    color: white;
     margin-bottom: 15px;
 
 }
@@ -338,20 +369,22 @@ nav ul li{
 .skltxt p{
     margin-bottom: 25px;
     font-family: 'gilroy';
-    color: rgb(87, 87, 87);
-    text-align: center;
+    color: white;
+    text-align: left;
 }
 
 .skltxt{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .skill{
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 
@@ -360,14 +393,13 @@ nav ul li{
     height: 200px;
     border-radius: 12px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 10px gray;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 23px;
-    margin-left: 10px;
-    margin-right: 10px;
+
 }
 
 .card h3{
@@ -432,3 +464,9 @@ nav ul li{
     margin-top: 10px;
 }
 
+
+.page5{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(28, 28, 28);
+}
