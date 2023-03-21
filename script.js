@@ -1,11 +1,4 @@
 
-const page3 = document.querySelector('.page3')
-const body = document.querySelector('body')
-
-if(page3.style.top === body.style.top){
-    page3.style.position === 'fixed'
-}
-
 
 gsap.from("#yoyo",{
     y:"20px",
@@ -119,20 +112,8 @@ tl2.to('.aboutopen',{
 
 let tl3 = gsap.timeline()
 
-tl3.to('.overlay',{
-    scrollTrigger:{
-        trigger:".page3",
-        scroller:"body",
-        start:"top center",
-        end:"center center",
-      
-        scrub:5,
-        
-    },
-    y:'-1000px'
-    
-})
-.from('.skillset h1',{
+
+tl3.from('.skillset h1',{
     opacity:0,
     onStart:function(){
         $('.skillset h1').textillate({
@@ -180,6 +161,18 @@ tl3.to('.overlay',{
   
 })
 
+tl3.to('.poster img',{
+    scrollTrigger:{
+        trigger:".page3",
+        scroller:"body",
+        start:"top bottom",
+        end:"bottom top",
+        scrub:2,
+       
+    },
+    rotate:'-110deg'
+})
+
 gsap.to('.col1img',{
     scrollTrigger:{
         trigger:".design",
@@ -205,4 +198,19 @@ gsap.to('.col2img',{
 
     y:'100px'
   
+})
+
+
+let tl4 = gsap.timeline()
+
+tl4.to('.conLeft img',{
+    scrollTrigger:{
+        trigger:".page6",
+        scroller:"body",
+        start:"top bottom",
+        end:"bottom top",
+        scrub:2,
+       
+    },
+    rotate:'-90deg'
 })
