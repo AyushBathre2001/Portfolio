@@ -1,3 +1,12 @@
+
+const page3 = document.querySelector('.page3')
+const body = document.querySelector('body')
+
+if(page3.style.top === body.style.top){
+    page3.style.position === 'fixed'
+}
+
+
 gsap.from("#yoyo",{
     y:"20px",
     yoyo:true,
@@ -177,7 +186,7 @@ gsap.to('.col1img',{
         scroller:"body",
         start:"top center",
         end:"center top",
-        scrub:8,
+        scrub:2,
         // markers:true
     },
 
@@ -190,7 +199,7 @@ gsap.to('.col2img',{
         scroller:"body",
         start:"top center",
         end:"center top",
-        scrub:8,
+        scrub:2,
         // markers:true
     },
 
