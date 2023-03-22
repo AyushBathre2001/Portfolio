@@ -191,24 +191,6 @@ nav ul li{
     justify-content: center;
 }
 
-.social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.social p{
-    margin-right: 20px;
-    color: gray;
-    font-family: 'gilroy';
-    border:1px solid #1c1c1c;
-    padding: 5px 13px;
-    border-radius: 25px;
-    margin-top: 10px;
-}
-
-
 
 .myimg{
     width: 400px;
@@ -673,7 +655,38 @@ nav ul li{
 
 .footer{
     width: 100%;
-    height: 50vh;
-    background-color: rgb(21, 21, 21);
+    height: 15vh;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: 'gilroy';
+}
+
+.rights h2{
+    font-size: 2vw;
+    font-weight: 400;
+   
+}
+
+.footer p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.social i{
+    color: white;
+    font-size: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.terms{
+    display: flex;
+
+}
+.terms p{
+    margin-right: 10px;
 }
 

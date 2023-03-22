@@ -183,7 +183,7 @@ gsap.to('.col1img',{
         // markers:true
     },
 
-    y:'-300px'
+    y:'-400px'
   
 })
 gsap.to('.col2img',{
