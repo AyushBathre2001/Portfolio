@@ -109,6 +109,20 @@ tl2.to('.aboutopen',{
     
 })
 
+.to('.crtcurtain',{
+    scrollTrigger:{
+        trigger:".page2",
+        scroller:"body",
+        start:"center 60%",
+        end:"center 60%",
+        // markers:true,
+        scrub:3
+        
+    },
+    left:"-100%",
+    repeat:0
+})
+
 
 let tl3 = gsap.timeline()
 
@@ -120,7 +134,7 @@ tl3.from('.skillset h1',{
             in:{
                 effect:'fadeInUp',
                 sequence:true,
-                delay:30
+                delay:20
               
             }
           
@@ -200,10 +214,82 @@ gsap.to('.col2img',{
   
 })
 
-
 let tl4 = gsap.timeline()
 
-tl4.to('.conLeft img',{
+tl4.from('.worktxt h1',{
+    opacity:0,
+    onStart:function(){
+        $('.worktxt h1').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:20
+                
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page5",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+    },
+})
+.from('.worktxt p',{
+    opacity:0,
+    onStart:function(){
+        $('.worktxt p').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:1
+                
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page5",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+    },
+})
+
+.to('.workcurtain1',{
+    scrollTrigger:{
+        trigger:".page5",
+        scroller:"body",
+        start:"30% 60%",
+        end:"30% 60%",
+        scrub:3,
+        // markers:true
+        
+    },
+    left:'-100%'
+})
+.to('.workcurtain2',{
+    scrollTrigger:{
+        trigger:".page5",
+        scroller:"body",
+        start:"60% 60%",
+        end:"60% 60%",
+        scrub:3,
+        // markers:true
+        
+    },
+    left:'-100%'
+})
+
+
+let tl5 = gsap.timeline()
+
+tl5.to('.conLeft img',{
     scrollTrigger:{
         trigger:".page6",
         scroller:"body",
@@ -214,3 +300,74 @@ tl4.to('.conLeft img',{
     },
     rotate:'-90deg'
 })
+
+
+let tl6 = gsap.timeline()
+
+tl6.from('.conLeft h1',{
+    opacity:0,
+    onStart:function(){
+        $('.conLeft h1').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:20
+                
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page6",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+    },
+})
+.from('.conLeft h2',{
+    opacity:0,
+    onStart:function(){
+        $('.conLeft h2').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:20
+                
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page6",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+    },
+})
+.from('.conLeft p',{
+    opacity:0,
+    onStart:function(){
+        $('.conLeft p').textillate({
+            in:{
+                effect:'fadeInUp',
+                sequence:true,
+                delay:8
+                
+              
+            }
+          
+        })
+    },
+    scrollTrigger:{
+        trigger:".page6",
+        scroller:"body",
+        start:"top center",
+        end:"top center",
+        
+    },
+})
+

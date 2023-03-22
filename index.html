@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="page1">
+    <div id="home" class="page1">
         <div class="top">
             <div class="navbar">
                 <div class="logo">
@@ -20,11 +20,12 @@
                 </div>
                 <nav>
                     <ul>
-                        <li style="font-weight: 800; color: white;">Home</li>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                       
+                        <li><a style="font-weight: 800; color: white;" href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
 
@@ -36,7 +37,7 @@
                     <p id="txtl3">Ceative web designer harnessing the power of design to achieve online goals.</p>
                 </div>
 
-                <button>Contact</button>
+                <a href="#contact"><button>Contact</button></a>
             </div>
             <div class="caption">
                 <p>Your vision, our expertise: Crafting the perfect website for you.</p>
@@ -69,12 +70,12 @@
                 <img class="col1img" src="./Media/designs/c01.png" alt="">
                 <img class="col1img" src="./Media/designs/interior_design01.png" alt="">
                 <img class="col1img" src="./Media/designs/Design2.png" alt="">
-            <img class="col1img" src="./Media/designs/sh.jpg" alt="">
+            <img class="col1img" src="./Media/designs/sh.png" alt="">
             <img class="col1img" src="./Media/designs/task01.png" alt="">
         </div>
     </div>
     </div>
-    <div class="page2">
+    <div id="about" class="page2">
         <div class="aboutopen">
 
             <div class="about">
@@ -85,6 +86,7 @@
             </div>
             <div class="mybox">
                 <div class="mycrt">
+                    <div class="crtcurtain"></div>
                     <img src="./Media/crt1.jpg" alt="">
                 </div>
                 <div class="myimg">
@@ -92,12 +94,13 @@
                     
                 </div>
                 <div class="mycrt">
+                    <div class="crtcurtain"></div>
                     <img src="./Media/crt2.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="page3">
+    <div id="skills" class="page3">
         <div class="skillset">
             <div class="skills">
 
@@ -136,7 +139,7 @@
         </div>
     </div>
 
-    <div class="page5">
+    <div id="projects" class="page5">
 
           
         <div class="worktxt">
@@ -146,45 +149,51 @@
         <div class="work">
             <div class="workbox">
                 <div class="workimg">
-                    <img src="./Media/work/foodweb.png" alt="">
+                    <div class="workcurtain1"></div>
+                    <img src="./Media/work/p2.jpg" alt="">
                 </div>
                 <div class="workname">
-                    <h1>Food Order Website</h1>
+                    <h2>Food Order Website</h2>
                     <button>View</button>
                 </div>
             </div>
             <div class="workbox">
                 <div class="workimg">
-                    <img src="./Media/work/c01.png" alt="">
+                    <div class="workcurtain1"></div>
+                    <img src="./Media/work/p1.jpg" alt="">
                 </div>
                 <div class="workname">
-                    <h1>Chat Application</h1>
+                    <h2>Chat Application</h2>
                     <button>View</button>
                 </div>
-
+                
+            </div>
+            <div class="workbox">
+                
+                <div class="workimg">
+                    
+                    <div class="workcurtain2"></div>
+                    <img src="./Media/work/p4.jpg" alt="">
+                </div>
+                <div class="workname">
+                    <h2>Bill Management System</h2>
+                    <button>View</button>
+                </div>
+                
             </div>
             <div class="workbox">
                 <div class="workimg">
-                    <img src="./Media/work/igen.jpg" alt="">
+                    <div class="workcurtain2"></div>
+                    <img src="./Media/work/p3.jpg" alt="">
                 </div>
                 <div class="workname">
-                    <h1>Bill Management System</h1>
-                    <button>View</button>
-                </div>
-
-            </div>
-            <div class="workbox">
-                <div class="workimg">
-                    <img src="./Media/work/noteb.png" alt="">
-                </div>
-                <div class="workname">
-                    <h1>Notes Management System</h1>
+                    <h2>Notes Management System</h2>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="page6">
+    <div id="contact" class="page6">
         <div class="conLeft">
             <img src="./Media/curve.png" alt="">
             <h1>HAVE AN IDEA?</h1>

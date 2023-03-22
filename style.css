@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100%;
@@ -46,6 +48,7 @@ body{
 .navbar .logo{
     font-family: 'gilroy';
     color: white;
+    cursor: pointer;
 }
 
 .navbar .logo span{
@@ -65,6 +68,15 @@ nav ul li{
 
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+nav ul li a:hover{
+    color: orange;
+}
 .txtbox{
     position: absolute;
     top: 50%;
@@ -116,6 +128,13 @@ nav ul li{
     font-size: 15px;
     color: white;
     margin-top:20px;
+    /* transition: all 0.3s; */
+}
+
+.top button:hover{
+    border: 0.2px solid orange;
+    color: orange;
+    cursor: pointer;
 }
 
 .pngbox img{
@@ -224,6 +243,7 @@ nav ul li{
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
+    position: relative;
 
 }
 
@@ -233,14 +253,15 @@ nav ul li{
     object-fit: cover;
 }
 
-.curtain{
+.crtcurtain{
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: white;
     z-index: 99;
-    /* background-color: rgba(255, 255, 255, 0.388); */
-    background: linear-gradient(to bottom, rgba(216, 209, 209, 0),rgba(255, 255, 255, 0),rgba(32, 32, 32, 0.445));
+    left: 0%;
 }
+
 .about{
     width: 85%;
     display: flex;
@@ -314,7 +335,9 @@ nav ul li{
 .poster img{
     width: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.4;
+    position: relative;
+    bottom:-25%
 }
 
 .aboutopen{
@@ -409,7 +432,7 @@ nav ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333;
+    background-color: #070707;
     position: relative;
     overflow: hidden;
 }
@@ -494,6 +517,9 @@ nav ul li{
     width: 100%;
     height: 400px;
     /* border: 1px solid white; */
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .workimg img{
@@ -512,7 +538,7 @@ nav ul li{
     justify-content: space-between;
 }
 
-.workname h1{
+.workname h2{
     font-family: 'gilroy';
     color: white;
     font-weight: 500;
@@ -528,6 +554,22 @@ nav ul li{
     background-color: inherit;
 }
 
+.workcurtain1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+.workcurtain2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+}
 
 
 .page6{
