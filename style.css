@@ -43,12 +43,14 @@ body{
     align-items: center;
     justify-content: space-around;
     font-family: 'gilroy';
+    position: relative;
 }
 
 .navbar .logo{
     font-family: 'gilroy';
     color: white;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 .navbar .logo span{
@@ -77,6 +79,48 @@ nav ul li a{
 nav ul li a:hover{
     color: orange;
 }
+
+.hamburger{
+    display: none;
+}
+
+
+.hamburger i{
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.hammenu{
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    top:0;
+    background-color: rgb(13, 13, 13);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.4s;
+}
+
+.hammenu ul li{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.hammenu ul li a{
+    color: white;
+    font-family: 'gilroy';
+    text-decoration: none;
+}
+
 .txtbox{
     position: absolute;
     top: 50%;
@@ -190,24 +234,29 @@ nav ul li a:hover{
 
 .page2{
     width: 100%;
-    height: 110vh;
-    background-color: #333;
+    min-height: 110vh;
+   
+    background-color: rgb(28, 28, 28);
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    position: relative;
+    justify-content: center;
     padding: 50px;
-    z-index: 99;
+    
+    
 }
+
 
 .mybox{
     width: 100%;
-    height: 300px;
+    /* min-height: 300px; */
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+   
 }
 
 
@@ -273,6 +322,7 @@ nav ul li a:hover{
     font-family: 'gilroy';
     color: white;
     font-weight: 500;
+    margin-top: 30px;
 }
 
 .about p{
@@ -296,63 +346,36 @@ nav ul li a:hover{
 
 .page3{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
-    background-color: white;
     overflow: hidden;
-}
-
-.skillset{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(28, 28, 28);
- 
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(28, 28, 28);
 }
 
 
+
+
 .skills{
-    width: 60%;
+    width: 85%;
+    padding: 50px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 100px;
+   
 }
 
-.poster{
-    width: 40%;
-    height: 100%;
-    /* border: 1px solid white; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.poster img{
-    width: 100%;
-    object-fit: cover;
+#page3img{
+    width: 20vw;
     opacity: 0.4;
-    position: relative;
+    position: absolute;
     bottom:-25%
 }
 
-.aboutopen{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgb(28, 28, 28);
-    bottom: -110%;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
@@ -386,6 +409,7 @@ nav ul li a:hover{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -400,6 +424,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     padding: 23px;
+   
 
 }
 
@@ -430,18 +455,19 @@ nav ul li a:hover{
 .page4{
     width: 100%;
     height: 170vh;
-    background-color: white;
+    height: 92vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #070707;
     position: relative;
     overflow: hidden;
+    /* border: 1px solid white; */
 }
 
 .design{
     width: 150vw;
-    height: 200vh;
+    height: 97vw;
     /* border: 1px solid black; */
     position: absolute;
     left: -25%;
@@ -471,6 +497,10 @@ nav ul li a:hover{
 .page5{
     width: 100%;
     background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -479,7 +509,7 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 80%;
+    width: 85%;
     padding: 50px;
     color: white;
     font-family: 'gilroy';
@@ -503,10 +533,11 @@ nav ul li a:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+ 
 }
 
 .workbox{
-    width: 45%;
+    width: 700px;
     height: 500px;
     /* border: 1px solid black; */
     margin-top: 30px;
@@ -514,6 +545,7 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .workimg{
@@ -735,3 +767,15 @@ nav ul li a:hover{
     margin-right: 10px;
 }
 
+
+@media screen and (max-width:1100px){
+    .navbar nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+}

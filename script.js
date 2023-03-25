@@ -1,4 +1,16 @@
 
+const hamburger = document.querySelector('.hamburger i')
+const hammenu = document.querySelector('.hammenu')
+
+hamburger.addEventListener('click',()=>{
+    if(hammenu.style.left === '-100%'){
+        hammenu.style.left = '0'
+    }
+    else{
+        hammenu.style.left = '-100%'
+    }
+})
+
 
 gsap.from("#yoyo",{
     y:"20px",
@@ -73,18 +85,8 @@ tl1.from("#fontchange",{
 let tl2 = gsap.timeline()
 
 
-tl2.to('.aboutopen',{
-    scrollTrigger:{
-        trigger:".page2",
-        scroller:"body",
-        start:"end center",
-        end:"end center",
-        scrub:4
-    },
-    bottom:'0%',
-    borderRadius:'0%'
-})
-.from("#abtxt",{
+
+tl2.from("#abtxt",{
     opacity:0,
     onStart:function(){
         $("#abtxt").textillate({
