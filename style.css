@@ -370,6 +370,8 @@ nav ul li a:hover{
     font-family: 'gilroy';
     color: white;
     text-align: left;
+    font-size: 18px;
+    line-height: 1.3;
 }
 
 .skltxt{
@@ -493,6 +495,7 @@ nav ul li a:hover{
 .worktxt p{
     margin-top: 10px;
     line-height: 1.3;
+    font-size: 18px;
 }
 
 .work{
@@ -707,7 +710,7 @@ nav ul li a:hover{
 }
 
 .rights h2{
-    font-size: 2vw;
+    font-size: 1.3vw;
     font-weight: 400;
    
 }

@@ -192,9 +192,9 @@ gsap.to('.col1img',{
         trigger:".design",
         scroller:"body",
         start:"top center",
-        end:"center top",
+        end:"bottom top",
         scrub:2,
-        // markers:true
+        
     },
 
     y:'-400px'
@@ -205,7 +205,7 @@ gsap.to('.col2img',{
         trigger:".design",
         scroller:"body",
         start:"top center",
-        end:"center top",
+        end:"bottom top",
         scrub:2,
         // markers:true
     },
