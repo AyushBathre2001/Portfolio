@@ -43,7 +43,9 @@ body{
     align-items: center;
     justify-content: space-around;
     font-family: 'gilroy';
-    position: relative;
+    position: fixed;
+    z-index: 110;
+    top: 0;
 }
 
 .navbar .logo{
@@ -450,6 +452,7 @@ nav ul li a:hover{
     width: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .page4{
@@ -778,4 +781,205 @@ nav ul li a:hover{
     .navbar{
         justify-content: space-between;
     }
+}
+
+@media screen and (max-width:900px){
+
+
+    .txtbox h1{
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    .txtbox h2{
+        font-size: 9vw;
+        text-align: center;
+    }
+    .pbox{
+
+        padding: 0px 40px;
+        margin-top: 15px;
+    }
+    .pbox p{
+        text-align: center;
+        margin-top: 0;
+    }
+    .about h1{
+        font-size: 4vw;
+    }
+    .about p{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .about{
+        align-items: center;
+        justify-content: center;
+    }
+    .skltxt h1{
+        font-size: 4vw;
+    }
+
+    .skltxt p{
+        text-align: center;
+    }
+
+    .skills{
+        align-items: center;
+    }
+    .skltxt{
+        align-items: center;
+    }
+
+    .worktxt{
+        align-items: center;
+    }
+
+    .worktxt h1{
+        font-size: 4vw;
+    }
+
+    .worktxt p{
+        text-align: center;
+    }
+
+    .page6{
+        flex-direction: column;
+        height: 140vh;
+    }
+
+    .conLeft{
+        width: 100%;
+        height: 40%;
+        align-items: center;
+
+    }
+
+    .conLeft p{
+        text-align: center;
+    }
+    .conRight{
+        width: 100%;
+        height: 60%;
+    }
+    .rights h2{
+        font-size: 2vw;
+    }
+
+    .card{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .workbox{
+        width: 90vw;
+        height: 70vw;
+    }
+    .workimg{
+        height: 80%;
+    }
+    .workname{
+        height: 20%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .txtbox h1{
+        font-size: 11vw;
+    }
+    .txtbox h2{
+        font-size: 11vw;
+    }
+    .caption{
+        display: none;
+    }
+    .page2{
+        padding: 10px;
+    }
+    .about h1{
+        font-size: 7vw;
+        margin-top: 35px;
+    }
+    .myimg{
+        width: 90vw;
+        height: 60vw;
+    }
+    .mycrt{
+        width: 90vw;
+        height: 60vw;
+    }
+    .skills{
+        padding: 10px;
+    }
+
+    .skltxt h1{
+        font-size:7vw ;
+        margin-top: 35px;
+    }
+    .tech{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .worktxt{
+        padding: 10px;
+        align-items: center;
+    }
+
+    .worktxt h1{
+        font-size: 7vw;
+        margin-top: 35px;
+        text-align: center;
+    }
+    .workname h2{
+        font-size: 18px;
+    }
+    .conLeft{
+        padding: 50px;
+        height: 30%;
+    }
+    .conRight{
+        height: 70%;
+    }
+    .conLeft h1{
+        font-size: 7vw;
+    }
+    .conLeft p{
+        font-size: 16px;
+    }
+    .mailbox{
+        width: 100%;
+    }
+    .mailbox form{
+        width: 85%;
+    }
+    .mailbox h2{
+        font-weight: 500;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+    }
+
+    .rights{
+        margin-bottom: 15px;
+
+    }
+
+    .rights h2{
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .terms{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 15px;
+    }
+    
 }
