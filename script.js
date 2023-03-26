@@ -93,8 +93,7 @@ tl2.from("#abtxt",{
             in:{
                 effect:'fadeInUp',
                 sequence:true,
-                delay:30,
-                markers:true
+                delay:20,
               
             }
           
@@ -111,13 +110,13 @@ tl2.from("#abtxt",{
     
 })
 
+
 .to('.crtcurtain',{
     scrollTrigger:{
-        trigger:".page2",
+        trigger:".crtcurtain",
         scroller:"body",
-        start:"center 60%",
-        end:"center 60%",
-        // markers:true,
+        start:"top 60%",
+        end:"top 60%",
         scrub:3
         
     },
@@ -129,10 +128,10 @@ tl2.from("#abtxt",{
 let tl3 = gsap.timeline()
 
 
-tl3.from('.skillset h1',{
+tl3.from('.skltxt h1',{
     opacity:0,
     onStart:function(){
-        $('.skillset h1').textillate({
+        $('.skltxt h1').textillate({
             in:{
                 effect:'fadeInUp',
                 sequence:true,
@@ -153,31 +152,9 @@ tl3.from('.skillset h1',{
 
   
 })
-.from('#firstp',{
-    opacity:0,
-    onStart:function(){
-        $('#firstp').textillate({
-            in:{
-                effect:'fadeInUp',
-                sequence:true,
-                delay:1
-                
-              
-            }
-          
-        })
-    },
-    scrollTrigger:{
-        trigger:".page3",
-        scroller:"body",
-        start:"top center",
-        end:"top center",
-        
-    },
-  
-})
 
-tl3.to('.poster img',{
+
+tl3.to('#page3img',{
     scrollTrigger:{
         trigger:".page3",
         scroller:"body",
@@ -199,7 +176,7 @@ gsap.to('.col1img',{
         
     },
 
-    y:'-400px'
+    y:'-200px'
   
 })
 gsap.to('.col2img',{
@@ -212,7 +189,7 @@ gsap.to('.col2img',{
         // markers:true
     },
 
-    y:'100px'
+    y:'150px'
   
 })
 
@@ -240,35 +217,14 @@ tl4.from('.worktxt h1',{
         
     },
 })
-.from('.worktxt p',{
-    opacity:0,
-    onStart:function(){
-        $('.worktxt p').textillate({
-            in:{
-                effect:'fadeInUp',
-                sequence:true,
-                delay:1
-                
-              
-            }
-          
-        })
-    },
-    scrollTrigger:{
-        trigger:".page5",
-        scroller:"body",
-        start:"top center",
-        end:"top center",
-        
-    },
-})
+
 
 .to('.workcurtain1',{
     scrollTrigger:{
-        trigger:".page5",
+        trigger:".workcurtain1",
         scroller:"body",
-        start:"30% 60%",
-        end:"30% 60%",
+        start:"top 60%",
+        end:"top 60%",
         scrub:3,
         // markers:true
         
@@ -277,10 +233,10 @@ tl4.from('.worktxt h1',{
 })
 .to('.workcurtain2',{
     scrollTrigger:{
-        trigger:".page5",
+        trigger:".workcurtain2",
         scroller:"body",
-        start:"60% 60%",
-        end:"60% 60%",
+        start:"top 60%",
+        end:"top 60%",
         scrub:3,
         // markers:true
         
@@ -350,26 +306,5 @@ tl6.from('.conLeft h1',{
         
     },
 })
-.from('.conLeft p',{
-    opacity:0,
-    onStart:function(){
-        $('.conLeft p').textillate({
-            in:{
-                effect:'fadeInUp',
-                sequence:true,
-                delay:8
-                
-              
-            }
-          
-        })
-    },
-    scrollTrigger:{
-        trigger:".page6",
-        scroller:"body",
-        start:"top center",
-        end:"top center",
-        
-    },
-})
+
 
