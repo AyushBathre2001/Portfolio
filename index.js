@@ -4,6 +4,7 @@ const path = require('path')
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const sendMail = require('./controllers/mailControl')
+const port = process.env.PORT || 3000
 
 const app = express()
 
@@ -11,7 +12,6 @@ app.use(express.static('./public'))
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 app.get('/',(req,res)=>{
     res.sendFile('./public/index.html')
@@ -25,6 +25,6 @@ app.post('/', (req, res) => {
     res.send("Mail has been sent")
 
 });
-app.listen(3000,()=>{
-    console.log("Server is running")
+app.listen(port,()=>{
+    console.log("Server is running" + port)
 })
